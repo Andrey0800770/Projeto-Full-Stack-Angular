@@ -1,0 +1,26 @@
+<h2> Lista de Alunos </h2>
+<div>
+<table class="table table-striped "> 
+    <thead>
+        <tr>
+            <th> Primeiro Nome </th> 
+            <th> Sobrenome </th>
+            <th> Email </th>  
+            <th> Ações </th>          
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of employees">
+            <td> {{ employee.nome }} </td>
+            <td> {{ employee.sobrenome }} </td>
+            <td> {{ employee.email }} </td>
+            <td> <button (click) = "updateAlunos(employee.id)" class= "btn btn-info">Update</button>
+                 <button (click) = "deleteEmployee(employee.id)" class="btn btn-danger" style="margin-left: 10px">Remover</button>
+                 <button (click) = "employeeDetails(employee.id)" class="btn btn-info" style="margin-left: 10px">Detalhes</button>
+                </td>
+
+        </tr>
+    </tbody> 
+</table>
+</div>

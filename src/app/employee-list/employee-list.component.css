@@ -1,0 +1,29 @@
+h2 {
+    background-color: #353535;
+    color: white;
+    border: #1e1e1e;
+}
+
+h1 {
+    color: white;
+}
+
+td {
+    background-color: #1e1e1e;
+    color: white;
+    border: #1e1e1e;
+    box-shadow: black;
+}
+
+th {
+    background-color: #353535;
+    color: white;
+    border: none;
+    box-shadow: black;
+}
+
+.btn-info {
+    background-color: #353535;
+    color: white;
+    border: none;
+}

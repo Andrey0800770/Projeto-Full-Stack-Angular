@@ -1,0 +1,22 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Atualizar Cadastro </h3>
+    <form (ngSubmit)="onSubmit()" >
+
+        <div class="form-group">
+            <label> Primeiro Nome</label>
+            <input type="text" class="form-control" [(ngModel)]="employee.nome" id="nome"  name="nome">
+        </div>
+
+        <div class="form-group">
+            <label> Sobrenome </label>
+            <input type="text" class="form-control" id="sobrenome" [(ngModel)]="employee.sobrenome" name="sobrenome">
+        </div>
+
+        <div class="form-group">
+            <label> Email </label>
+            <input type="text" class="form-control" id="email" [(ngModel)]="employee.email" name="email">
+        </div>
+
+        <button class="btn btn-success" type="submit">Enviar</button>
+    </form>
+</div>
